@@ -666,6 +666,45 @@ main {
 .footer-navigation a:focus-visible {
   color: var(--color-text);
 }
+.internal-page-header {
+  min-height: 54vh;
+  padding: 100px 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.internal-page-header h1 {
+  margin: 0;
+  font-size: clamp(72px, 13vw, 210px);
+  line-height: 0.82;
+  font-weight: 400;
+  letter-spacing: -0.07em;
+}
+
+.internal-page-introduction {
+  max-width: 650px;
+  margin: 48px 0 0 auto;
+  color: var(--color-secondary);
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.projects-page-section {
+  border-top: 0;
+}
+
+.projects-page-heading {
+  justify-content: flex-end;
+}
+
+.project-information h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
 @media (max-width: 800px) {
   :root {
     --page-padding: 20px;
@@ -931,5 +970,22 @@ main {
   .footer-navigation {
     justify-content: flex-start;
     gap: 12px 18px;
+  }
+    .internal-page-header {
+    min-height: 48vh;
+    padding: 70px 0 50px;
+  }
+
+  .internal-page-header h1 {
+    font-size: clamp(68px, 22vw, 120px);
+  }
+
+  .internal-page-introduction {
+    margin: 36px 0 0;
+    font-size: 16px;
+  }
+
+  .projects-page-heading {
+    align-items: flex-start;
   }
 }
