@@ -1096,6 +1096,9 @@ main {
   font-size: 30px;
   font-weight: 300;
 }
+.project-card.is-hidden {
+  display: none;
+}
 @media (max-width: 800px) {
   :root {
     --page-padding: 20px;
