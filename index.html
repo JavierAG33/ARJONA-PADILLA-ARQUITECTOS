@@ -4,47 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta
+    name="description"
+    content="Arjona Padilla Arquitectos. Estudio de arquitectura, proyectos, colaboraciones e investigación."
+  >
+
   <title>Arjona Padilla Arquitectos</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f3;
-      color: #1a1a1a;
-    }
-
-    main {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 30px;
-      box-sizing: border-box;
-    }
-
-    h1 {
-      margin: 0 0 15px;
-      font-size: clamp(36px, 7vw, 80px);
-      font-weight: 400;
-      letter-spacing: -2px;
-    }
-
-    p {
-      margin: 0;
-      font-size: 18px;
-      color: #666;
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+  <header class="site-header">
+    <a class="site-logo" href="index.html">
+      Arjona Padilla Arquitectos
+    </a>
+
+    <nav class="main-navigation" aria-label="Navegación principal">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#estudio">Estudio</a>
+      <a href="#otros-trabajos">Otros trabajos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
   <main>
-    <div>
-      <h1>Arjona Padilla Arquitectos</h1>
-      <p>Estudio de arquitectura</p>
-    </div>
+    <section class="intro">
+      <p class="intro-label">Estudio de arquitectura</p>
+
+      <h1>
+        Arquitectura vinculada al lugar, la materia y las personas.
+      </h1>
+    </section>
+
+    <section id="proyectos" class="temporary-section">
+      <h2>Proyectos</h2>
+    </section>
+
+    <section id="estudio" class="temporary-section">
+      <h2>Estudio</h2>
+    </section>
+
+    <section id="otros-trabajos" class="temporary-section">
+      <h2>Otros trabajos</h2>
+    </section>
+
+    <section id="contacto" class="temporary-section">
+      <h2>Contacto</h2>
+    </section>
   </main>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
