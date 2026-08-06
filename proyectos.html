@@ -45,26 +45,46 @@
     <section class="projects-section projects-page-section">
       <div class="section-heading projects-page-heading">
         <nav class="project-filters" aria-label="Filtros de proyectos">
-          <button class="project-filter is-active" type="button">
+          <button
+            class="project-filter is-active"
+            type="button"
+            data-filter="todos"
+            aria-pressed="true"
+          >
             Todos
           </button>
 
-          <button class="project-filter" type="button">
+          <button
+            class="project-filter"
+            type="button"
+            data-filter="obra-construida"
+            aria-pressed="false"
+          >
             Obra construida
           </button>
 
-          <button class="project-filter" type="button">
+          <button
+            class="project-filter"
+            type="button"
+            data-filter="en-desarrollo"
+            aria-pressed="false"
+          >
             En desarrollo
           </button>
 
-          <button class="project-filter" type="button">
+          <button
+            class="project-filter"
+            type="button"
+            data-filter="concursos"
+            aria-pressed="false"
+          >
             Concursos
           </button>
         </nav>
       </div>
 
       <div class="projects-grid">
-        <article class="project-card">
+        <article class="project-card" data-category="obra-construida">
           <a
             href="proyectos/casa-del-patio.html"
             aria-label="Ver proyecto Casa del Patio"
@@ -83,7 +103,7 @@
           </a>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-category="obra-construida">
           <a href="#" aria-label="Ver proyecto Vivienda entre Olivos">
             <div class="project-image">
               <img
@@ -100,7 +120,7 @@
           </a>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-category="concursos">
           <a href="#" aria-label="Ver proyecto Centro Cultural">
             <div class="project-image">
               <img
@@ -117,7 +137,7 @@
           </a>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-category="obra-construida">
           <a href="#" aria-label="Ver proyecto Reforma en el Centro">
             <div class="project-image">
               <img
@@ -134,7 +154,7 @@
           </a>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-category="obra-construida">
           <a href="#" aria-label="Ver proyecto Espacio de Trabajo">
             <div class="project-image">
               <img
@@ -151,7 +171,7 @@
           </a>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-category="en-desarrollo">
           <a href="#" aria-label="Ver proyecto Plaza y Mercado">
             <div class="project-image">
               <img
