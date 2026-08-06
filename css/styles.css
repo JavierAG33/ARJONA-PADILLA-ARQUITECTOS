@@ -70,7 +70,10 @@ textarea {
   color: var(--color-secondary);
   transition: color 180ms ease;
 }
-
+.main-navigation a.is-current {
+  color: var(--color-text);
+  border-bottom: 1px solid currentColor;
+}
 .main-navigation a:hover,
 .main-navigation a:focus-visible {
   color: var(--color-text);
