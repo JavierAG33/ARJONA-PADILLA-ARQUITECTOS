@@ -939,6 +939,160 @@ main {
 .contact-page-block a:focus-visible {
   opacity: 0.55;
 }
+.home-hero {
+  min-height: calc(100vh - 75px);
+  padding: 90px 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.home-hero h1 {
+  max-width: 1350px;
+  margin: 0;
+  font-size: clamp(58px, 9vw, 148px);
+  line-height: 0.9;
+  font-weight: 400;
+  letter-spacing: -0.065em;
+}
+
+.home-hero-link {
+  align-self: flex-end;
+  margin-top: 54px;
+  padding-bottom: 4px;
+  color: var(--color-secondary);
+  font-size: 14px;
+  border-bottom: 1px solid currentColor;
+  transition: color 180ms ease;
+}
+
+.home-hero-link:hover,
+.home-hero-link:focus-visible {
+  color: var(--color-text);
+}
+
+.home-projects {
+  padding: 110px 0;
+  border-top: 1px solid var(--color-line);
+}
+
+.home-section-heading {
+  margin-bottom: 60px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.home-section-heading h2 {
+  margin: 0;
+  font-size: clamp(44px, 6vw, 88px);
+  line-height: 0.96;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+.home-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 70px 24px;
+}
+
+.home-project-large {
+  grid-column: 1 / -1;
+}
+
+.home-project-image {
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background-color: #deddd8;
+}
+
+.home-project-large .home-project-image {
+  aspect-ratio: 16 / 9;
+}
+
+.home-project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms ease;
+}
+
+.home-project a:hover .home-project-image img,
+.home-project a:focus-visible .home-project-image img {
+  transform: scale(1.02);
+}
+
+.home-studio {
+  padding: 110px 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+  align-items: end;
+  gap: 8vw;
+  border-top: 1px solid var(--color-line);
+}
+
+.home-studio-image {
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background-color: #deddd8;
+}
+
+.home-studio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-studio-content h2 {
+  margin: 0 0 42px;
+  font-size: clamp(34px, 4vw, 66px);
+  line-height: 1.02;
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+
+.home-studio-content .section-link {
+  padding-top: 0;
+}
+
+.home-directory {
+  border-top: 1px solid var(--color-line);
+}
+
+.home-directory-item {
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 1px solid var(--color-line);
+  transition: opacity 180ms ease;
+}
+
+.home-directory-item:hover,
+.home-directory-item:focus-visible {
+  opacity: 0.5;
+}
+
+.home-directory-number {
+  color: var(--color-secondary);
+  font-size: 13px;
+}
+
+.home-directory-item h2 {
+  margin: 0;
+  font-size: clamp(38px, 5vw, 76px);
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+.home-directory-arrow {
+  font-size: 30px;
+  font-weight: 300;
+}
 @media (max-width: 800px) {
   :root {
     --page-padding: 20px;
@@ -1316,5 +1470,73 @@ main {
   .contact-page-block p,
   .contact-page-block address {
     font-size: 16px;
+  }
+    .home-hero {
+    min-height: calc(100vh - 120px);
+    padding: 70px 0 50px;
+  }
+
+  .home-hero h1 {
+    font-size: clamp(54px, 17vw, 92px);
+  }
+
+  .home-hero-link {
+    align-self: flex-start;
+    margin-top: 38px;
+  }
+
+  .home-projects {
+    padding: 80px 0;
+  }
+
+  .home-section-heading {
+    margin-bottom: 40px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .home-projects-grid {
+    display: block;
+  }
+
+  .home-project {
+    margin-bottom: 48px;
+  }
+
+  .home-project:last-child {
+    margin-bottom: 0;
+  }
+
+  .home-project-image,
+  .home-project-large .home-project-image {
+    aspect-ratio: 4 / 3;
+  }
+
+  .home-studio {
+    padding: 80px 0;
+    display: block;
+  }
+
+  .home-studio-image {
+    margin-bottom: 42px;
+  }
+
+  .home-studio-content h2 {
+    font-size: clamp(34px, 10vw, 54px);
+  }
+
+  .home-directory-item {
+    padding: 24px 0;
+    grid-template-columns: 38px minmax(0, 1fr) auto;
+    gap: 12px;
+  }
+
+  .home-directory-item h2 {
+    font-size: clamp(32px, 10vw, 52px);
+  }
+
+  .home-directory-arrow {
+    font-size: 22px;
   }
 }
