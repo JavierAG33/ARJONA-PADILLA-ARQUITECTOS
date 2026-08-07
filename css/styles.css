@@ -1133,10 +1133,14 @@ main {
 
 .project-slider-stage {
   position: relative;
-  width: 68%;
-  height: min(56vh, 640px);
+
+  width: min(58%, 820px);
+  aspect-ratio: 4 / 3;
+  height: auto;
+
   margin-left: auto;
   margin-right: 4%;
+
   overflow: hidden;
   background-color: var(--color-background);
 }
@@ -1189,11 +1193,11 @@ main {
 }
 
 .project-slider-prev {
-  left: 4px;
+  left: 8px;
 }
 
 .project-slider-next {
-  right: 4px;
+  right: 8px;
 }
 
 .project-slider-stage:hover .project-slider-button,
