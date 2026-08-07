@@ -1134,11 +1134,11 @@ main {
 .project-slider-stage {
   position: relative;
 
-  width: min(48%, 760px);
-  height: min(52vh, 580px);
+  width: min(50%, 780px);
+  height: min(55vh, 620px);
 
   margin-left: auto;
-  margin-right: 4%;
+  margin-right: 7%;
 
   overflow: visible;
   background-color: var(--color-background);
@@ -1174,9 +1174,9 @@ main {
   height: 22px;
   padding: 0;
 
-  border: 1px solid #ddd9d1;
+  border: 1px solid #cbc6bd;
   border-radius: 50%;
-  background-color: #e5e2dc;
+  background-color: #d6d2ca;
 
   cursor: pointer;
   z-index: 3;
@@ -1206,7 +1206,7 @@ main {
 
 .project-slider-button:hover {
   transform: translateY(-50%) scale(1.08);
-  background-color: #dcd8d1;
+  background-color: #c9c4bb;
 }
 
 .project-slider-button:focus,
@@ -1226,6 +1226,10 @@ main {
 
   color: var(--color-secondary);
   font-size: 13px;
+}
+.project-slider-footer span {
+  position: relative;
+  top: 10px;
 }
 .project-slider-button:focus,
 .project-slider-button:focus-visible,
