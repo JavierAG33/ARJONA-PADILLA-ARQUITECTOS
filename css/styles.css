@@ -1192,11 +1192,11 @@ main {
 }
 
 .project-slider-prev {
-  left: -38px;
+  left: -15px;
 }
 
 .project-slider-next {
-  right: -38px;
+  right: -15px;
 }
 
 .project-slider-stage:hover .project-slider-button,
