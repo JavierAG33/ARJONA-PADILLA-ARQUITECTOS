@@ -1167,13 +1167,13 @@ main {
   top: 50%;
   transform: translateY(-50%);
 
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   padding: 0;
 
-  border: 1px solid #d2cec6;
+  border: 1px solid #ddd9d1;
   border-radius: 50%;
-  background-color: #d9d6cf;
+  background-color: #e5e2dc;
 
   cursor: pointer;
   z-index: 3;
@@ -1181,21 +1181,29 @@ main {
   font-size: 0;
   color: transparent;
 
-  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+  opacity: 0;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    background-color 180ms ease;
 }
 
 .project-slider-prev {
-  left: 22px;
+  left: 10px;
 }
 
 .project-slider-next {
-  right: 22px;
+  right: 10px;
+}
+
+.project-slider-stage:hover .project-slider-button,
+.project-slider-button:focus-visible {
+  opacity: 1;
 }
 
 .project-slider-button:hover {
   transform: translateY(-50%) scale(1.08);
-  background-color: #cfcbc4;
-  border-color: #c8c3ba;
+  background-color: #dcd8d1;
 }
 
 .project-slider-button:focus,
