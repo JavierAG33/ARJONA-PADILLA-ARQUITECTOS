@@ -1136,7 +1136,7 @@ main {
   width: 100%;
   height: min(76vh, 950px);
   overflow: hidden;
-  background-color: #deddd8;
+  background-color: var(--color-background);
 }
 
 .project-slide {
@@ -1157,6 +1157,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  object-position: center;
 }
 
 .project-slider-button {
