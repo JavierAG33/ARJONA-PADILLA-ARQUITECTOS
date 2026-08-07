@@ -71,11 +71,13 @@ document.addEventListener("DOMContentLoaded", () => {
       previousButton.addEventListener("click", (event) => {
         event.preventDefault();
         showSlide(currentSlide - 1);
+        event.currentTarget.blur();
       });
 
       nextButton.addEventListener("click", (event) => {
         event.preventDefault();
         showSlide(currentSlide + 1);
+        event.currentTarget.blur();
       });
 
       document.addEventListener("keydown", (event) => {
