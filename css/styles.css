@@ -1102,7 +1102,10 @@ main {
 .project-page-minimal {
   padding-bottom: 60px;
 }
-
+.project-page-minimal {
+  padding-left: 55px;
+  padding-right: 55px;
+}
 .project-minimal-header {
   padding: 34px 0 22px;
 }
@@ -1113,14 +1116,14 @@ main {
 
 .project-minimal-header h1 {
   margin: 0;
-  font-size: clamp(28px, 3vw, 46px);
-  line-height: 0.96;
+  font-size: clamp(22px, 1.7vw, 30px);
+  line-height: 1;
   font-weight: 400;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.025em;
 }
 
 .project-minimal-title p {
-  margin: 10px 0 0;
+  margin: 8px 0 0;
   color: var(--color-secondary);
   font-size: 13px;
 }
@@ -1662,7 +1665,7 @@ main {
     font-size: 22px;
   }
     .project-minimal-header {
-    padding: 60px 0 36px;
+    padding: 34px 55px 22px;
     align-items: flex-start;
     flex-direction: column;
     gap: 18px;
