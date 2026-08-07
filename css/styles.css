@@ -1134,7 +1134,7 @@ main {
 .project-slider-stage {
   position: relative;
 
-  width: 62%;
+  width: min(48%, 760px);
   height: min(52vh, 580px);
 
   margin-left: auto;
