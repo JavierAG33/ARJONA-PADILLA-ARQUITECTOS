@@ -1,93 +1,92 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // FILTROS DE PROYECTOS
   const filterButtons = document.querySelectorAll(".project-filter");
   const projectCards = document.querySelectorAll(
     ".projects-page-section .project-card"
   );
 
-  if (!filterButtons.length || !projectCards.length) {
-    return;
+  if (filterButtons.length && projectCards.length) {
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const selectedFilter = button.dataset.filter;
+
+        filterButtons.forEach((filterButton) => {
+          const isSelected = filterButton === button;
+
+          filterButton.classList.toggle("is-active", isSelected);
+          filterButton.setAttribute(
+            "aria-pressed",
+            isSelected ? "true" : "false"
+          );
+        });
+
+        projectCards.forEach((projectCard) => {
+          const projectCategory = projectCard.dataset.category;
+
+          const shouldShow =
+            selectedFilter === "todos" ||
+            projectCategory === selectedFilter;
+
+          projectCard.classList.toggle("is-hidden", !shouldShow);
+        });
+      });
+    });
   }
 
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const selectedFilter = button.dataset.filter;
-
-      filterButtons.forEach((filterButton) => {
-        const isSelected = filterButton === button;
-
-        filterButton.classList.toggle("is-active", isSelected);
-        filterButton.setAttribute(
-          "aria-pressed",
-          isSelected ? "true" : "false"
-        );
-      });
-
-      projectCards.forEach((projectCard) => {
-        const projectCategory = projectCard.dataset.category;
-        const shouldShow =
-          selectedFilter === "todos" ||
-          projectCategory === selectedFilter;
-
-        projectCard.classList.toggle("is-hidden", !shouldShow);
-      });
-      document.addEventListener("DOMContentLoaded", () => {
+  // CARRUSEL DE PROYECTO
   const slider = document.querySelector(".project-slider");
 
-  if (!slider) {
-    return;
-  }
+  if (slider) {
+    const slides = slider.querySelectorAll(".project-slide");
+    const previousButton = slider.querySelector(".project-slider-prev");
+    const nextButton = slider.querySelector(".project-slider-next");
+    const currentCounter = slider.querySelector("#current-slide");
+    const totalCounter = slider.querySelector("#total-slides");
 
-  const slides = slider.querySelectorAll(".project-slide");
-  const previousButton = slider.querySelector(".project-slider-prev");
-  const nextButton = slider.querySelector(".project-slider-next");
-  const currentCounter = slider.querySelector("#current-slide");
-  const totalCounter = slider.querySelector("#total-slides");
+    if (slides.length && previousButton && nextButton) {
+      let currentSlide = 0;
 
-  if (!slides.length || !previousButton || !nextButton) {
-    return;
-  }
+      if (totalCounter) {
+        totalCounter.textContent = slides.length;
+      }
 
-  let currentSlide = 0;
+      function showSlide(newIndex) {
+        slides[currentSlide].classList.remove("is-active");
 
-  if (totalCounter) {
-    totalCounter.textContent = slides.length;
-  }
+        if (newIndex < 0) {
+          currentSlide = slides.length - 1;
+        } else if (newIndex >= slides.length) {
+          currentSlide = 0;
+        } else {
+          currentSlide = newIndex;
+        }
 
-  function showSlide(newIndex) {
-    slides[currentSlide].classList.remove("is-active");
+        slides[currentSlide].classList.add("is-active");
 
-    if (newIndex < 0) {
-      currentSlide = slides.length - 1;
-    } else if (newIndex >= slides.length) {
-      currentSlide = 0;
-    } else {
-      currentSlide = newIndex;
+        if (currentCounter) {
+          currentCounter.textContent = currentSlide + 1;
+        }
+      }
+
+      previousButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        showSlide(currentSlide - 1);
+      });
+
+      nextButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        showSlide(currentSlide + 1);
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") {
+          showSlide(currentSlide - 1);
+        }
+
+        if (event.key === "ArrowRight") {
+          showSlide(currentSlide + 1);
+        }
+      });
     }
-
-    slides[currentSlide].classList.add("is-active");
-
-    if (currentCounter) {
-      currentCounter.textContent = currentSlide + 1;
-    }
   }
-
-  previousButton.addEventListener("click", (event) => {
-    event.preventDefault();
-    showSlide(currentSlide - 1);
-  });
-
-  nextButton.addEventListener("click", (event) => {
-    event.preventDefault();
-    showSlide(currentSlide + 1);
-  });
-
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "ArrowLeft") {
-      showSlide(currentSlide - 1);
-    }
-
-    if (event.key === "ArrowRight") {
-      showSlide(currentSlide + 1);
-    };
-  });
 });
