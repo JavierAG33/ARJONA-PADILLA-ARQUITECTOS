@@ -1113,10 +1113,10 @@ main {
 
 .project-minimal-header h1 {
   margin: 0;
-  font-size: clamp(38px, 5vw, 76px);
-  line-height: 0.94;
+  font-size: clamp(28px, 3vw, 46px);
+  line-height: 0.96;
   font-weight: 400;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.04em;
 }
 
 .project-minimal-title p {
@@ -1130,10 +1130,10 @@ main {
 
 .project-slider-stage {
   position: relative;
-  width: 72%;
-  height: min(54vh, 610px);
+  width: 62%;
+  height: min(52vh, 580px);
   margin-left: auto;
-  margin-right: 12%;
+  margin-right: 4%;
   overflow: hidden;
   background-color: var(--color-background);
 }
@@ -1190,9 +1190,9 @@ main {
 }
 
 .project-slider-footer {
-  width: 72%;
+  width: 62%;
   margin-left: auto;
-  margin-right: 12%;
+  margin-right: 4%;
   padding-top: 8px;
   display: flex;
   justify-content: space-between;
