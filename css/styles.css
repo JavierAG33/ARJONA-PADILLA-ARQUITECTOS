@@ -1104,38 +1104,36 @@ main {
 }
 
 .project-minimal-header {
-  padding: 80px 0 50px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 50px;
+  padding: 34px 0 22px;
 }
 
-.project-minimal-header {
-  padding: 42px 0 28px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 40px;
+.project-minimal-title {
+  max-width: 900px;
 }
 
 .project-minimal-header h1 {
-  max-width: 1050px;
   margin: 0;
-  font-size: clamp(42px, 6vw, 92px);
-  line-height: 0.92;
+  font-size: clamp(38px, 5vw, 76px);
+  line-height: 0.94;
   font-weight: 400;
-  letter-spacing: -0.055em;
+  letter-spacing: -0.05em;
 }
 
+.project-minimal-title p {
+  margin: 10px 0 0;
+  color: var(--color-secondary);
+  font-size: 13px;
+}
 .project-slider {
   margin-top: 8px;
 }
 
 .project-slider-stage {
   position: relative;
-  width: 100%;
-  height: min(60vh, 680px);
+  width: 72%;
+  height: min(54vh, 610px);
+  margin-left: auto;
+  margin-right: 12%;
   overflow: hidden;
   background-color: var(--color-background);
 }
@@ -1192,6 +1190,9 @@ main {
 }
 
 .project-slider-footer {
+  width: 72%;
+  margin-left: auto;
+  margin-right: 12%;
   padding-top: 8px;
   display: flex;
   justify-content: space-between;
