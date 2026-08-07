@@ -1107,7 +1107,7 @@ main {
   padding-right: 55px;
 }
 .project-minimal-header {
-  padding: 34px 40px 22px 70px;
+  padding: 34px 0 22px;
 }
 
 .project-minimal-title {
@@ -1193,9 +1193,10 @@ main {
 }
 
 .project-slider-footer {
-  width: calc(100% - 110px);
-  margin: 0 auto;
-  padding-top: 14px;
+  width: auto;
+  margin-left: 55px;
+  margin-right: 8px;
+  padding-top: 16px;
 
   display: flex;
   justify-content: space-between;
@@ -1205,8 +1206,8 @@ main {
   font-size: 13px;
 }
 .project-slider-footer span:last-child {
-  margin-right: 0;
-  transform: translateY(8px);
+  position: relative;
+  top: 8px;
 }
 .project-slider-button:focus,
 .project-slider-button:focus-visible,
@@ -1707,6 +1708,8 @@ main {
 }
 }
 .project-detail-page .site-header {
-  width: calc(100% - 110px);
+  width: auto;
   max-width: none;
+  margin-left: 70px;
+  margin-right: 40px;
 }
