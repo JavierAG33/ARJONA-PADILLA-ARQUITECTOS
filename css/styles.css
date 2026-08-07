@@ -1193,21 +1193,15 @@ main {
 }
 
 .project-slider-footer {
-  width: auto;
-  margin-left: 55px;
-  margin-right: 8px;
-  padding-top: 16px;
+  width: calc(100vw - 110px);
+  margin-left: calc(50% - 50vw + 70px);
+  padding-top: 22px;
 
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  justify-content: flex-end;
 
   color: var(--color-secondary);
   font-size: 13px;
-}
-.project-slider-footer span:last-child {
-  position: relative;
-  top: 8px;
 }
 .project-slider-button:focus,
 .project-slider-button:focus-visible,
