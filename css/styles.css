@@ -1679,4 +1679,15 @@ main {
   .project-slider-footer {
     font-size: 12px;
   }
+  .project-slider-button {
+  color: var(--color-text);
+}
+
+.project-slider-prev {
+  cursor: w-resize;
+}
+
+.project-slider-next {
+  cursor: e-resize;
+}
 }
