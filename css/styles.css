@@ -1111,30 +1111,31 @@ main {
   gap: 50px;
 }
 
-.project-minimal-header h1 {
-  max-width: 1200px;
-  margin: 0;
-  font-size: clamp(54px, 8vw, 130px);
-  line-height: 0.9;
-  font-weight: 400;
-  letter-spacing: -0.06em;
+.project-minimal-header {
+  padding: 42px 0 28px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
 }
 
-.project-minimal-header p {
-  margin: 0 0 8px;
-  flex-shrink: 0;
-  color: var(--color-secondary);
-  font-size: 14px;
+.project-minimal-header h1 {
+  max-width: 1050px;
+  margin: 0;
+  font-size: clamp(42px, 6vw, 92px);
+  line-height: 0.92;
+  font-weight: 400;
+  letter-spacing: -0.055em;
 }
 
 .project-slider {
-  margin-top: 20px;
+  margin-top: 8px;
 }
 
 .project-slider-stage {
   position: relative;
   width: 100%;
-  height: min(76vh, 950px);
+  height: min(60vh, 680px);
   overflow: hidden;
   background-color: var(--color-background);
 }
@@ -1191,7 +1192,7 @@ main {
 }
 
 .project-slider-footer {
-  padding-top: 14px;
+  padding-top: 8px;
   display: flex;
   justify-content: space-between;
   gap: 30px;
