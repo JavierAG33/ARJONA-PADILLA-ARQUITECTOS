@@ -1107,7 +1107,7 @@ main {
   padding-right: 55px;
 }
 .project-minimal-header {
-  padding: 34px 55px 22px;
+  padding: 34px 40px 22px 70px;
 }
 
 .project-minimal-title {
@@ -1195,12 +1195,18 @@ main {
 .project-slider-footer {
   width: calc(100% - 110px);
   margin: 0 auto;
-  padding-top: 8px;
+  padding-top: 14px;
+
   display: flex;
   justify-content: space-between;
   gap: 30px;
+
   color: var(--color-secondary);
   font-size: 13px;
+}
+.project-slider-footer span:last-child {
+  margin-right: 0;
+  transform: translateY(8px);
 }
 .project-slider-button:focus,
 .project-slider-button:focus-visible,
