@@ -1164,32 +1164,45 @@ main {
 
 .project-slider-button {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  padding: 0 30px;
-  border: 0;
-  background: transparent;
-  font-size: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 24px;
+  height: 24px;
+  padding: 0;
+
+  border: 1px solid #d2cec6;
+  border-radius: 50%;
+  background-color: #d9d6cf;
+
   cursor: pointer;
-  opacity: 0;
-  transition: opacity 180ms ease;
-  z-index: 2;
+  z-index: 3;
+
+  font-size: 0;
+  color: transparent;
+
+  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
 }
 
 .project-slider-prev {
-  left: 0;
-  text-align: left;
+  left: 22px;
 }
 
 .project-slider-next {
-  right: 0;
-  text-align: right;
+  right: 22px;
 }
 
-.project-slider-stage:hover .project-slider-button,
-.project-slider-button:focus-visible {
-  opacity: 1;
+.project-slider-button:hover {
+  transform: translateY(-50%) scale(1.08);
+  background-color: #cfcbc4;
+  border-color: #c8c3ba;
+}
+
+.project-slider-button:focus,
+.project-slider-button:focus-visible,
+.project-slider-button:active {
+  outline: none;
+  box-shadow: none;
 }
 
 .project-slider-footer {
