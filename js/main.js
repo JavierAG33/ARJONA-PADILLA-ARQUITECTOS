@@ -31,10 +31,17 @@ document.addEventListener("DOMContentLoaded", () => {
         projectCard.classList.toggle("is-hidden", !shouldShow);
       });
       document.addEventListener("DOMContentLoaded", () => {
-  const slides = document.querySelectorAll(".project-slide");
-  const previousButton = document.querySelector(".project-slider-prev");
-  const nextButton = document.querySelector(".project-slider-next");
-  const counter = document.querySelector("#current-slide");
+  const slider = document.querySelector(".project-slider");
+
+  if (!slider) {
+    return;
+  }
+
+  const slides = slider.querySelectorAll(".project-slide");
+  const previousButton = slider.querySelector(".project-slider-prev");
+  const nextButton = slider.querySelector(".project-slider-next");
+  const currentCounter = slider.querySelector("#current-slide");
+  const totalCounter = slider.querySelector("#total-slides");
 
   if (!slides.length || !previousButton || !nextButton) {
     return;
@@ -42,23 +49,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentSlide = 0;
 
-  const showSlide = (index) => {
+  if (totalCounter) {
+    totalCounter.textContent = slides.length;
+  }
+
+  function showSlide(newIndex) {
     slides[currentSlide].classList.remove("is-active");
 
-    currentSlide = (index + slides.length) % slides.length;
+    if (newIndex < 0) {
+      currentSlide = slides.length - 1;
+    } else if (newIndex >= slides.length) {
+      currentSlide = 0;
+    } else {
+      currentSlide = newIndex;
+    }
 
     slides[currentSlide].classList.add("is-active");
 
-    if (counter) {
-      counter.textContent = currentSlide + 1;
+    if (currentCounter) {
+      currentCounter.textContent = currentSlide + 1;
     }
-  };
+  }
 
-  previousButton.addEventListener("click", () => {
+  previousButton.addEventListener("click", (event) => {
+    event.preventDefault();
     showSlide(currentSlide - 1);
   });
 
-  nextButton.addEventListener("click", () => {
+  nextButton.addEventListener("click", (event) => {
+    event.preventDefault();
     showSlide(currentSlide + 1);
   });
 
@@ -69,6 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (event.key === "ArrowRight") {
       showSlide(currentSlide + 1);
-    }
+    };
   });
 });
