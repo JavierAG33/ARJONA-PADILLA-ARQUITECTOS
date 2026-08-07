@@ -1107,7 +1107,7 @@ main {
   padding-right: 55px;
 }
 .project-minimal-header {
-  padding: 34px 0 22px;
+  padding: 34px 55px 22px;
 }
 
 .project-minimal-title {
@@ -1133,8 +1133,8 @@ main {
 
 .project-slider-stage {
   position: relative;
-  width: 62%;
-  height: min(52vh, 580px);
+  width: 68%;
+  height: min(56vh, 640px);
   margin-left: auto;
   margin-right: 4%;
   overflow: hidden;
@@ -1193,9 +1193,8 @@ main {
 }
 
 .project-slider-footer {
-  width: 62%;
-  margin-left: auto;
-  margin-right: 4%;
+  width: calc(100% - 110px);
+  margin: 0 auto;
   padding-top: 8px;
   display: flex;
   justify-content: space-between;
@@ -1700,4 +1699,8 @@ main {
 .project-slider-next {
   cursor: e-resize;
 }
+}
+.project-detail-page .site-header {
+  width: calc(100% - 110px);
+  max-width: none;
 }
