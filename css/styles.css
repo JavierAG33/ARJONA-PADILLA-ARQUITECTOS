@@ -1198,7 +1198,12 @@ main {
   color: var(--color-secondary);
   font-size: 13px;
 }
-
+.project-slider-button:focus,
+.project-slider-button:focus-visible,
+.project-slider-button:active {
+  outline: none;
+  box-shadow: none;
+}
 
 
 
