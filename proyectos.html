@@ -16,180 +16,164 @@
 
 <body>
   <header class="site-header">
-    <a class="site-logo" href="index.html">
-      Arjona Padilla Arquitectos
+
+  <a class="site-logo" href="index.html">
+    Arjona Padilla Arquitectos
+  </a>
+
+  <nav class="main-navigation" aria-label="Navegación principal">
+
+    <a href="estudio.html">
+      Estudio
     </a>
 
-    <nav class="main-navigation" aria-label="Navegación principal">
-      <a href="proyectos.html" class="is-current" aria-current="page">
-        Proyectos
-      </a>
-      <a href="estudio.html">Estudio</a>
-      <a href="otros-trabajos.html">Otros trabajos</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </header>
+    <a href="obra-construida.html">
+      Obra construida
+    </a>
+
+    <a
+      href="proyectos.html"
+      class="is-current"
+      aria-current="page"
+    >
+      Proyectos
+    </a>
+
+    <a href="contacto.html">
+      Contacto
+    </a>
+
+  </nav>
+
+</header>
 
   <main>
-    <section class="internal-page-header">
-      <p class="section-label">Archivo de proyectos</p>
+    <main class="works-main">
 
-      <h1>Proyectos</h1>
+  <section class="works-grid">
 
-      <p class="internal-page-introduction">
-        Una selección de proyectos de arquitectura, rehabilitación,
-        espacio público, concursos y trabajos en desarrollo.
-      </p>
-    </section>
+    <!-- PROYECTO 1 -->
 
-    <section class="projects-section projects-page-section">
-      <div class="section-heading projects-page-heading">
-        <nav class="project-filters" aria-label="Filtros de proyectos">
-          <button
-            class="project-filter is-active"
-            type="button"
-            data-filter="todos"
-            aria-pressed="true"
+    <article class="works-card">
+
+      <a href="proyectos/NOMBRE-PROYECTO-1.html">
+
+        <div class="works-card-image">
+          <img
+            src="images/proyectos/NOMBRE-CARPETA-1/01.jpg"
+            alt="NOMBRE DEL PROYECTO 1"
           >
-            Todos
-          </button>
+        </div>
 
-          <button
-            class="project-filter"
-            type="button"
-            data-filter="obra-construida"
-            aria-pressed="false"
+        <h2>NOMBRE DEL PROYECTO 1</h2>
+
+      </a>
+
+    </article>
+
+
+    <!-- PROYECTO 2 -->
+
+    <article class="works-card">
+
+      <a href="proyectos/NOMBRE-PROYECTO-2.html">
+
+        <div class="works-card-image">
+          <img
+            src="images/proyectos/NOMBRE-CARPETA-2/01.jpg"
+            alt="NOMBRE DEL PROYECTO 2"
           >
-            Obra construida
-          </button>
+        </div>
 
-          <button
-            class="project-filter"
-            type="button"
-            data-filter="en-desarrollo"
-            aria-pressed="false"
+        <h2>NOMBRE DEL PROYECTO 2</h2>
+
+      </a>
+
+    </article>
+
+
+    <!-- PROYECTO 3 -->
+
+    <article class="works-card">
+
+      <a href="proyectos/NOMBRE-PROYECTO-3.html">
+
+        <div class="works-card-image">
+          <img
+            src="images/proyectos/NOMBRE-CARPETA-3/01.jpg"
+            alt="NOMBRE DEL PROYECTO 3"
           >
-            En desarrollo
-          </button>
+        </div>
 
-          <button
-            class="project-filter"
-            type="button"
-            data-filter="concursos"
-            aria-pressed="false"
+        <h2>NOMBRE DEL PROYECTO 3</h2>
+
+      </a>
+
+    </article>
+
+
+    <!-- PROYECTO 4 -->
+
+    <article class="works-card">
+
+      <a href="proyectos/NOMBRE-PROYECTO-4.html">
+
+        <div class="works-card-image">
+          <img
+            src="images/proyectos/NOMBRE-CARPETA-4/01.jpg"
+            alt="NOMBRE DEL PROYECTO 4"
           >
-            Concursos
-          </button>
-        </nav>
-      </div>
+        </div>
 
-      <div class="projects-grid">
-        <article class="project-card" data-category="obra-construida">
-          <a
-            href="proyectos/casa-del-patio.html"
-            aria-label="Ver proyecto Casa del Patio"
+        <h2>NOMBRE DEL PROYECTO 4</h2>
+
+      </a>
+
+    </article>
+
+
+    <!-- PROYECTO 5 -->
+
+    <article class="works-card">
+
+      <a href="proyectos/NOMBRE-PROYECTO-5.html">
+
+        <div class="works-card-image">
+          <img
+            src="images/proyectos/NOMBRE-CARPETA-5/01.jpg"
+            alt="NOMBRE DEL PROYECTO 5"
           >
-            <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=85"
-                alt="Vivienda contemporánea con grandes huecos"
-              >
-            </div>
+        </div>
 
-            <div class="project-information">
-              <h2>Casa del Patio</h2>
-              <p>Jaén · 2025</p>
-            </div>
-          </a>
-        </article>
+        <h2>NOMBRE DEL PROYECTO 5</h2>
 
-        <article class="project-card" data-category="obra-construida">
-          <a href="#" aria-label="Ver proyecto Vivienda entre Olivos">
-            <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85"
-                alt="Interior de una vivienda contemporánea"
-                loading="lazy"
-              >
-            </div>
+      </a>
 
-            <div class="project-information">
-              <h2>Vivienda entre Olivos</h2>
-              <p>Martos · 2024</p>
-            </div>
-          </a>
-        </article>
+    </article>
 
-        <article class="project-card" data-category="concursos">
-          <a href="#" aria-label="Ver proyecto Centro Cultural">
-            <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1600&q=85"
-                alt="Edificio contemporáneo de geometría blanca"
-                loading="lazy"
-              >
-            </div>
 
-            <div class="project-information">
-              <h2>Centro Cultural</h2>
-              <p>Granada · Concurso</p>
-            </div>
-          </a>
-        </article>
+    <!-- PROYECTO 6 -->
 
-        <article class="project-card" data-category="obra-construida">
-          <a href="#" aria-label="Ver proyecto Reforma en el Centro">
-            <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85"
-                alt="Fachada de una vivienda moderna"
-                loading="lazy"
-              >
-            </div>
+    <article class="works-card">
 
-            <div class="project-information">
-              <h2>Reforma en el Centro</h2>
-              <p>Córdoba · 2025</p>
-            </div>
-          </a>
-        </article>
+      <a href="proyectos/NOMBRE-PROYECTO-6.html">
 
-        <article class="project-card" data-category="obra-construida">
-          <a href="#" aria-label="Ver proyecto Espacio de Trabajo">
-            <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=85"
-                alt="Espacio de trabajo abierto y luminoso"
-                loading="lazy"
-              >
-            </div>
+        <div class="works-card-image">
+          <img
+            src="images/proyectos/NOMBRE-CARPETA-6/01.jpg"
+            alt="NOMBRE DEL PROYECTO 6"
+          >
+        </div>
 
-            <div class="project-information">
-              <h2>Espacio de Trabajo</h2>
-              <p>Sevilla · 2023</p>
-            </div>
-          </a>
-        </article>
+        <h2>NOMBRE DEL PROYECTO 6</h2>
 
-        <article class="project-card" data-category="en-desarrollo">
-          <a href="#" aria-label="Ver proyecto Plaza y Mercado">
-            <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1600&q=85"
-                alt="Arquitectura residencial integrada en el entorno"
-                loading="lazy"
-              >
-            </div>
+      </a>
 
-            <div class="project-information">
-              <h2>Plaza y Mercado</h2>
-              <p>Valladolid · En desarrollo</p>
-            </div>
-          </a>
-        </article>
-      </div>
-    </section>
-  </main>
+    </article>
+
+  </section>
+
+</main>
 
   <footer class="site-footer">
     <p>© 2026 Arjona Padilla Arquitectos</p>
