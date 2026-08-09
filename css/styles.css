@@ -1547,7 +1547,75 @@ main {
   font-size: 15px;
   line-height: 1.55;
 }
+/* =========================================================
+   CONTACTO
+   ========================================================= */
 
+.contact-minimal {
+  width: auto;
+  max-width: none;
+
+  margin-left: 70px;
+  margin-right: 40px;
+
+  padding-top: 55px;
+  padding-bottom: 70px;
+
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 90px;
+
+  align-items: start;
+
+  flex: 1;
+}
+
+
+/* INFORMACIÓN */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.contact-info a {
+  font-size: 15px;
+  line-height: 1.4;
+
+  color: var(--color-secondary);
+
+  transition: color 180ms ease;
+}
+
+.contact-info a:hover {
+  color: var(--color-text);
+}
+
+
+/* MAPA */
+
+.contact-location {
+  width: 100%;
+}
+
+.contact-location a {
+  display: block;
+}
+
+.contact-location img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  transition: opacity 200ms ease;
+}
+
+.contact-location a:hover img {
+  opacity: 0.82;
+}
 
 
 
@@ -2099,4 +2167,18 @@ main {
 .studio-architect p {
   font-size: 14px;
 }
+  .contact-minimal {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .contact-info a {
+    font-size: 14px;
+  }
 }
