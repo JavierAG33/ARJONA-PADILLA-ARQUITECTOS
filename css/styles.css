@@ -1250,8 +1250,8 @@ main {
 .home-slider {
   display: flex;
   justify-content: center;
-  padding-top: 45px;
-  padding-bottom: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .home-slider-stage {
