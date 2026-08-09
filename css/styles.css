@@ -1257,8 +1257,8 @@ main {
 .home-slider-stage {
   position: relative;
 
-  width: min(38vw, 650px);
-  height: min(48vh, 520px);
+  width: min(46vw, 760px);
+  height: min(58vh, 620px);
 
   background-color: var(--color-background);
 }
