@@ -1301,8 +1301,10 @@ main {
 }
 .home-detail-page .project-minimal-title h1 {
   font-family: "Bradley Hand ITC", "Bradley Hand", cursive;
-  font-weight: 400;
+  font-size: clamp(38px, 4vw, 64px);
+  font-weight: 700;
   letter-spacing: 0;
+  line-height: 1;
 }
 
 
