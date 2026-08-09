@@ -1497,6 +1497,49 @@ main {
 .projects-list-page .works-grid {
   padding-top: 52px;
 }
+.studio-minimal {
+  width: auto;
+  max-width: none;
+
+  margin-left: 70px;
+  margin-right: 40px;
+
+  padding-top: 55px;
+  padding-bottom: 80px;
+}
+
+.studio-architects {
+  width: min(620px, 48vw);
+}
+
+.studio-architect {
+  margin-bottom: 70px;
+}
+
+.studio-architect:last-child {
+  margin-bottom: 0;
+}
+
+.studio-architect h1 {
+  margin: 0 0 14px;
+
+  font-size: clamp(28px, 2.5vw, 40px);
+  line-height: 1;
+
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+
+.studio-architect p {
+  max-width: 520px;
+
+  margin: 0;
+
+  color: var(--color-secondary);
+
+  font-size: 15px;
+  line-height: 1.55;
+}
 
 
 
@@ -2026,4 +2069,27 @@ main {
   .works-card h2 {
     font-size: 14px;
   }
+  .studio-minimal {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.studio-architects {
+  width: 100%;
+}
+
+.studio-architect {
+  margin-bottom: 50px;
+}
+
+.studio-architect h1 {
+  font-size: 30px;
+}
+
+.studio-architect p {
+  font-size: 14px;
+}
 }
