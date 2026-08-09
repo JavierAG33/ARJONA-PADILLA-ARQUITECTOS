@@ -129,9 +129,4 @@ document.addEventListener("DOMContentLoaded", () => {
       setInterval(showNextHomeSlide, 4500);
     }
   }
-
-});
-});
-    }
-  }
 });
