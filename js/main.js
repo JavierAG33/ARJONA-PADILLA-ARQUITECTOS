@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           const shouldShow =
             selectedFilter === "todos" ||
-            projectCategory === selectedFilter;
+            projectCategory.split(" ").includes(selectedFilter);
 
           projectCard.classList.toggle(
             "is-hidden",
