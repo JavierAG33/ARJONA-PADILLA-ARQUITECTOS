@@ -1494,7 +1494,9 @@ main {
 .works-card-placeholder {
   background-color: #e4e2dc;
 }
-
+.projects-list-page .works-grid {
+  padding-top: 52px;
+}
 
 
 
