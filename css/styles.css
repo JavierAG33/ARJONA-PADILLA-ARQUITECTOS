@@ -1299,7 +1299,11 @@ main {
   max-width: none;
   text-align: center;
 }
-
+.home-detail-page .project-minimal-title h1 {
+  font-family: "Bradley Hand ITC", "Bradley Hand", cursive;
+  font-weight: 400;
+  letter-spacing: 0;
+}
 
 
 
