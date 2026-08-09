@@ -2,11 +2,15 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <meta
     name="description"
-    content="Arjona Padilla Arquitectos. Estudio de arquitectura, proyectos, colaboraciones e investigación."
+    content="Arjona Padilla Arquitectos. Estudio de arquitectura."
   >
 
   <title>Arjona Padilla Arquitectos</title>
@@ -14,158 +18,87 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="home-detail-page">
+
   <header class="site-header">
+
     <a class="site-logo" href="index.html">
       Arjona Padilla Arquitectos
     </a>
 
     <nav class="main-navigation" aria-label="Navegación principal">
-      <a href="proyectos.html">Proyectos</a>
-      <a href="estudio.html">Estudio</a>
-      <a href="otros-trabajos.html">Otros trabajos</a>
-      <a href="contacto.html">Contacto</a>
+
+      <a href="proyectos.html">
+        Proyectos
+      </a>
+
+      <a href="estudio.html">
+        Estudio
+      </a>
+
+      <a href="otros-trabajos.html">
+        Otros trabajos
+      </a>
+
+      <a href="contacto.html">
+        Contacto
+      </a>
+
     </nav>
+
   </header>
 
-  <main>
-    <section class="home-hero">
-      <p class="intro-label">Estudio de arquitectura</p>
+  <main class="home-minimal">
 
-      <h1>
-        Arquitectura vinculada al lugar, la materia y las personas.
-      </h1>
+    <section
+      class="home-slider"
+      aria-label="Selección de proyectos de Arjona Padilla Arquitectos"
+    >
 
-      <a class="home-hero-link" href="proyectos.html">
-        Ver proyectos →
-      </a>
-    </section>
+      <div class="home-slider-stage">
 
-    <section class="home-projects">
-      <div class="home-section-heading">
-        <div>
-          <p class="section-label">Selección</p>
-          <h2>Proyectos destacados</h2>
-        </div>
+        <figure class="home-slide is-active">
+          <img
+            src="images/inicio/01.jpg"
+            alt="Proyecto de Arjona Padilla Arquitectos"
+          >
+        </figure>
 
-        <a class="section-link" href="proyectos.html">
-          Ver todos los proyectos →
-        </a>
+        <figure class="home-slide">
+          <img
+            src="images/inicio/02.jpg"
+            alt="Proyecto de Arjona Padilla Arquitectos"
+          >
+        </figure>
+
+        <figure class="home-slide">
+          <img
+            src="images/inicio/03.jpg"
+            alt="Proyecto de Arjona Padilla Arquitectos"
+          >
+        </figure>
+
+        <figure class="home-slide">
+          <img
+            src="images/inicio/04.jpg"
+            alt="Proyecto de Arjona Padilla Arquitectos"
+          >
+        </figure>
+
+        <figure class="home-slide">
+          <img
+            src="images/inicio/05.jpg"
+            alt="Proyecto de Arjona Padilla Arquitectos"
+          >
+        </figure>
+
       </div>
 
-      <div class="home-projects-grid">
-        <article class="home-project home-project-large">
-          <a href="proyectos/casa-del-patio.html">
-            <div class="home-project-image">
-              <img
-                src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1800&q=85"
-                alt="Casa del Patio"
-              >
-            </div>
-
-            <div class="project-information">
-              <h3>Casa del Patio</h3>
-              <p>Jaén · 2025</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="home-project">
-          <a href="proyectos.html">
-            <div class="home-project-image">
-              <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85"
-                alt="Vivienda entre Olivos"
-                loading="lazy"
-              >
-            </div>
-
-            <div class="project-information">
-              <h3>Vivienda entre Olivos</h3>
-              <p>Martos · 2024</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="home-project">
-          <a href="proyectos.html">
-            <div class="home-project-image">
-              <img
-                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1400&q=85"
-                alt="Centro Cultural"
-                loading="lazy"
-              >
-            </div>
-
-            <div class="project-information">
-              <h3>Centro Cultural</h3>
-              <p>Granada · Concurso</p>
-            </div>
-          </a>
-        </article>
-      </div>
     </section>
 
-    <section class="home-studio">
-      <div class="home-studio-image">
-        <img
-          src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1800&q=85"
-          alt="Espacio de trabajo del estudio"
-          loading="lazy"
-        >
-      </div>
-
-      <div class="home-studio-content">
-        <p class="section-label">Estudio</p>
-
-        <h2>
-          Una práctica arquitectónica atenta al contexto, la construcción
-          y el uso cotidiano de los espacios.
-        </h2>
-
-        <a class="section-link" href="estudio.html">
-          Conocer el estudio →
-        </a>
-      </div>
-    </section>
-
-    <section class="home-directory">
-      <a href="proyectos.html" class="home-directory-item">
-        <span class="home-directory-number">01</span>
-        <h2>Proyectos</h2>
-        <span class="home-directory-arrow">→</span>
-      </a>
-
-      <a href="estudio.html" class="home-directory-item">
-        <span class="home-directory-number">02</span>
-        <h2>Estudio</h2>
-        <span class="home-directory-arrow">→</span>
-      </a>
-
-      <a href="otros-trabajos.html" class="home-directory-item">
-        <span class="home-directory-number">03</span>
-        <h2>Otros trabajos</h2>
-        <span class="home-directory-arrow">→</span>
-      </a>
-
-      <a href="contacto.html" class="home-directory-item">
-        <span class="home-directory-number">04</span>
-        <h2>Contacto</h2>
-        <span class="home-directory-arrow">→</span>
-      </a>
-    </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© 2026 Arjona Padilla Arquitectos</p>
-
-    <nav class="footer-navigation" aria-label="Enlaces legales">
-      <a href="#">Aviso legal</a>
-      <a href="#">Privacidad</a>
-      <a href="#">Cookies</a>
-    </nav>
-  </footer>
-
   <script src="js/main.js"></script>
+
 </body>
 </html>
