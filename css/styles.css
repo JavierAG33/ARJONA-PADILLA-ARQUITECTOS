@@ -1248,17 +1248,17 @@ main {
 }
 
 .home-slider {
-  min-height: calc(100vh - 85px);
   display: flex;
-  align-items: center;
   justify-content: center;
+  padding-top: 45px;
+  padding-bottom: 25px;
 }
 
 .home-slider-stage {
   position: relative;
 
-  width: min(46vw, 760px);
-  height: min(58vh, 620px);
+  width: min(38vw, 650px);
+  height: min(48vh, 520px);
 
   background-color: var(--color-background);
 }
