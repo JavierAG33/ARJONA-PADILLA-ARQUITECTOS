@@ -2,263 +2,270 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Obra construida de Arjona Padilla Arquitectos."
+  >
 
   <title>Obra construida | Arjona Padilla Arquitectos</title>
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="works-page">
 
-  <!-- CABECERA -->
   <header class="site-header">
 
-    <nav class="main-nav" aria-label="Navegación principal">
-      <a href="index.html">ESTUDIO</a>
+    <a class="site-logo" href="index.html">
+      Arjona Padilla Arquitectos
+    </a>
+
+    <nav class="main-navigation" aria-label="Navegación principal">
+
+      <a href="estudio.html">
+        Estudio
+      </a>
 
       <a
         href="obra-construida.html"
-        class="is-active"
+        class="is-current"
         aria-current="page"
       >
-        OBRA CONSTRUIDA
+        Obra construida
       </a>
 
-      <a href="proyectos.html">PROYECTOS</a>
+      <a href="proyectos.html">
+        Proyectos
+      </a>
 
-      <a href="blog.html">BLOG</a>
+      <a href="contacto.html">
+        Contacto
+      </a>
+
     </nav>
-
-    <a href="index.html" class="site-name">
-      Arjona Padilla Arquitectos
-    </a>
 
   </header>
 
 
-  <main>
+  <main class="works-main">
 
-    <!-- FILTROS DE OBRA CONSTRUIDA -->
-    <section class="projects-filters-section">
+    <header class="works-header">
 
-      <div
-        class="projects-filters"
-        aria-label="Filtrar obra construida"
+      <h1>Obra construida</h1>
+
+    </header>
+
+
+    <nav
+      class="works-filters"
+      aria-label="Categorías de obra construida"
+    >
+
+      <button
+        class="works-filter is-active"
+        type="button"
+        data-filter="todos"
+      >
+        Todos
+      </button>
+
+      <button
+        class="works-filter"
+        type="button"
+        data-filter="vivienda"
+      >
+        Vivienda
+      </button>
+
+      <button
+        class="works-filter"
+        type="button"
+        data-filter="educacion"
+      >
+        Educación
+      </button>
+
+      <button
+        class="works-filter"
+        type="button"
+        data-filter="equipamientos"
+      >
+        Equipamientos
+      </button>
+
+      <button
+        class="works-filter"
+        type="button"
+        data-filter="rehabilitaciones"
+      >
+        Rehabilitaciones
+      </button>
+
+      <button
+        class="works-filter"
+        type="button"
+        data-filter="intervenciones-efimeras"
+      >
+        Intervenciones efímeras
+      </button>
+
+      <button
+        class="works-filter"
+        type="button"
+        data-filter="espacio-publico"
+      >
+        Espacio público
+      </button>
+
+    </nav>
+
+
+    <section class="works-grid">
+
+      <!-- IES PEÑA DEL ÁGUILA -->
+
+      <article
+        class="works-card"
+        data-category="educacion"
       >
 
-        <button
-          class="project-filter is-active"
-          type="button"
-          data-filter="todos"
-          aria-pressed="true"
-        >
-          Todos
-        </button>
+        <a href="proyectos/ies-pena-del-aguila.html">
 
-        <button
-          class="project-filter"
-          type="button"
-          data-filter="vivienda"
-          aria-pressed="false"
-        >
-          Vivienda
-        </button>
+          <div class="works-card-image">
+            <img
+              src="images/proyectos/ies-pena-del-aguila/01.jpg"
+              alt="IES Peña del Águila"
+            >
+          </div>
 
-        <button
-          class="project-filter"
-          type="button"
-          data-filter="educacion"
-          aria-pressed="false"
-        >
-          Educación
-        </button>
+          <h2>IES Peña del Águila</h2>
 
-        <button
-          class="project-filter"
-          type="button"
-          data-filter="equipamientos"
-          aria-pressed="false"
-        >
-          Equipamientos
-        </button>
+        </a>
 
-        <button
-          class="project-filter"
-          type="button"
-          data-filter="rehabilitaciones"
-          aria-pressed="false"
-        >
-          Rehabilitaciones
-        </button>
-
-        <button
-          class="project-filter"
-          type="button"
-          data-filter="intervenciones-efimeras"
-          aria-pressed="false"
-        >
-          Intervenciones Efímeras
-        </button>
-
-        <button
-          class="project-filter"
-          type="button"
-          data-filter="espacio-publico"
-          aria-pressed="false"
-        >
-          Espacio Público
-        </button>
-
-      </div>
-
-    </section>
+      </article>
 
 
-    <!-- OBRAS -->
-    <section class="projects-page-section">
+      <!-- CEIP MAESTRO CARLOS SOLER -->
 
-      <div class="projects-grid">
+      <article
+        class="works-card"
+        data-category="educacion"
+      >
 
-        <!-- PROYECTO 1 -->
-        <article
-          class="project-card"
-          data-category="vivienda"
-        >
-          <a href="proyectos/proyecto-01.html">
+        <a href="#">
 
-            <div class="project-card-image">
-              <img
-                src="images/obra-construida/proyecto-01.jpg"
-                alt="Proyecto de Arjona Padilla Arquitectos"
-              >
-            </div>
+          <div class="works-card-image">
+            <img
+              src="images/proyectos/ceip-maestro-carlos-soler/01.JPG"
+              alt="CEIP Maestro Carlos Soler"
+            >
+          </div>
 
-            <h2 class="project-card-title">
-              Nombre del proyecto
-            </h2>
+          <h2>CEIP Maestro Carlos Soler</h2>
 
-          </a>
-        </article>
+        </a>
+
+      </article>
 
 
-        <!-- PROYECTO 2 -->
-        <article
-          class="project-card"
-          data-category="equipamientos"
-        >
-          <a href="proyectos/proyecto-02.html">
+      <!-- CENTRO DEPORTIVO URBANO -->
 
-            <div class="project-card-image">
-              <img
-                src="images/obra-construida/proyecto-02.jpg"
-                alt="Proyecto de Arjona Padilla Arquitectos"
-              >
-            </div>
+      <article
+        class="works-card"
+        data-category="equipamientos"
+      >
 
-            <h2 class="project-card-title">
-              Nombre del proyecto
-            </h2>
+        <a href="#">
 
-          </a>
-        </article>
+          <div class="works-card-image">
+            <img
+              src="images/proyectos/centro-deportivo-urbano/01.png"
+              alt="Centro Deportivo Urbano"
+            >
+          </div>
 
+          <h2>Centro Deportivo Urbano</h2>
 
-        <!-- PROYECTO 3 -->
-        <article
-          class="project-card"
-          data-category="rehabilitaciones"
-        >
-          <a href="proyectos/proyecto-03.html">
+        </a>
 
-            <div class="project-card-image">
-              <img
-                src="images/obra-construida/proyecto-03.jpg"
-                alt="Proyecto de Arjona Padilla Arquitectos"
-              >
-            </div>
-
-            <h2 class="project-card-title">
-              Nombre del proyecto
-            </h2>
-
-          </a>
-        </article>
+      </article>
 
 
-        <!-- PROYECTO 4 -->
-        <article
-          class="project-card"
-          data-category="vivienda"
-        >
-          <a href="proyectos/proyecto-04.html">
+      <!-- AYUNTAMIENTO DE VILLARRODRIGO -->
 
-            <div class="project-card-image">
-              <img
-                src="images/obra-construida/proyecto-04.jpg"
-                alt="Proyecto de Arjona Padilla Arquitectos"
-              >
-            </div>
+      <article
+        class="works-card"
+        data-category="equipamientos"
+      >
 
-            <h2 class="project-card-title">
-              Nombre del proyecto
-            </h2>
+        <a href="#">
 
-          </a>
-        </article>
+          <div class="works-card-image">
+            <img
+              src="images/proyectos/ayuntamiento-villarrodrigo/01.JPG"
+              alt="Ayuntamiento de Villarrodrigo"
+            >
+          </div>
 
+          <h2>Ayuntamiento de Villarrodrigo</h2>
 
-        <!-- PROYECTO 5 -->
-        <article
-          class="project-card"
-          data-category="educacion"
-        >
-          <a href="proyectos/proyecto-05.html">
+        </a>
 
-            <div class="project-card-image">
-              <img
-                src="images/obra-construida/proyecto-05.jpg"
-                alt="Proyecto de Arjona Padilla Arquitectos"
-              >
-            </div>
-
-            <h2 class="project-card-title">
-              Nombre del proyecto
-            </h2>
-
-          </a>
-        </article>
+      </article>
 
 
-        <!-- PROYECTO 6 -->
-        <article
-          class="project-card"
-          data-category="espacio-publico"
-        >
-          <a href="proyectos/proyecto-06.html">
+      <!-- OFICINAS CENTRALES APROMSI -->
 
-            <div class="project-card-image">
-              <img
-                src="images/obra-construida/proyecto-06.jpg"
-                alt="Proyecto de Arjona Padilla Arquitectos"
-              >
-            </div>
+      <article
+        class="works-card"
+        data-category="equipamientos"
+      >
 
-            <h2 class="project-card-title">
-              Nombre del proyecto
-            </h2>
+        <a href="#">
 
-          </a>
-        </article>
+          <div class="works-card-image">
+            <img
+              src="images/oficinas-centrales-aprompsi/01.png"
+              alt="Oficinas Centrales APROMSI"
+            >
+          </div>
 
-      </div>
+          <h2>Oficinas Centrales APROMSI</h2>
+
+        </a>
+
+      </article>
+
+
+      <!-- EJEMPLO VIVIENDA -->
+
+      <article
+        class="works-card"
+        data-category="vivienda"
+      >
+
+        <a href="#">
+
+          <div class="works-card-image works-card-placeholder"></div>
+
+          <h2>NOMBRE DEL PROYECTO</h2>
+
+        </a>
+
+      </article>
 
     </section>
 
   </main>
 
 
-  <script src="script.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>
