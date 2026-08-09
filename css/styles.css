@@ -2122,41 +2122,93 @@ main {
   .home-directory-arrow {
     font-size: 22px;
   }
-    .project-minimal-header {
-    padding: 34px 55px 22px;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 18px;
-  }
+    /* =========================================================
+   FICHA DE PROYECTO - MÓVIL
+   ========================================================= */
 
-  .project-minimal-header h1 {
-    font-size: clamp(52px, 16vw, 88px);
-  }
+.project-detail-page .project-minimal-header {
+  padding: 32px 20px 24px;
 
-  .project-slider-stage {
-    height: 62vh;
-  }
+  display: block;
+}
 
-  .project-slider-button {
-    width: 35%;
-    padding: 0 14px;
-    opacity: 1;
-    font-size: 24px;
-  }
+.project-detail-page .project-minimal-title {
+  width: 100%;
+  max-width: none;
+}
 
-  .project-slider-footer {
-    font-size: 12px;
-  }
-  .project-slider-button {
+.project-detail-page .project-minimal-header h1 {
+  margin: 0 0 8px;
+
+  font-size: clamp(28px, 9vw, 42px);
+  line-height: 0.98;
+  font-weight: 400;
+}
+
+.project-detail-page .project-minimal-title p {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+
+/* SLIDER */
+
+.project-detail-page .project-slider {
+  min-height: 0;
+
+  margin: 0;
+  padding: 0 20px 35px;
+}
+
+.project-detail-page .project-slider-stage {
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 4 / 3;
+
+  margin: 0 auto;
+}
+
+.project-detail-page .project-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.project-detail-page .project-slide img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* BOTONES */
+
+.project-detail-page .project-slider-button {
+  width: 38px;
+  height: 38px;
+
+  padding: 0;
+
+  opacity: 1;
+
+  font-size: 20px;
   color: var(--color-text);
 }
 
-.project-slider-prev {
-  cursor: w-resize;
+.project-detail-page .project-slider-prev {
+  cursor: pointer;
 }
 
-.project-slider-next {
-  cursor: e-resize;
+.project-detail-page .project-slider-next {
+  cursor: pointer;
+}
+
+.project-detail-page .project-slider-footer {
+  margin-top: 10px;
+  font-size: 12px;
 }
    .home-slider {
     min-height: calc(100vh - 120px);
