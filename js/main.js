@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  // =========================================================
   // FILTROS DE PROYECTOS
+  // =========================================================
+
   const filterButtons = document.querySelectorAll(".project-filter");
   const projectCards = document.querySelectorAll(
     ".projects-page-section .project-card"
@@ -14,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const isSelected = filterButton === button;
 
           filterButton.classList.toggle("is-active", isSelected);
+
           filterButton.setAttribute(
             "aria-pressed",
             isSelected ? "true" : "false"
@@ -27,92 +32,105 @@ document.addEventListener("DOMContentLoaded", () => {
             selectedFilter === "todos" ||
             projectCategory === selectedFilter;
 
-          projectCard.classList.toggle("is-hidden", !shouldShow);
+          projectCard.classList.toggle(
+            "is-hidden",
+            !shouldShow
+          );
         });
       });
     });
   }
 
-  // CARRUSEL DE PROYECTO
-  const slider = document.querySelector(".project-slider");
 
-  if (slider) {
-    const slides = slider.querySelectorAll(".project-slide");
-    const previousButton = slider.querySelector(".project-slider-prev");
-    const nextButton = slider.querySelector(".project-slider-next");
-    const currentCounter = slider.querySelector("#current-slide");
-    const totalCounter = slider.querySelector("#total-slides");
+  // =========================================================
+  // CARRUSEL MANUAL DE LAS FICHAS DE PROYECTO
+  // =========================================================
+
+  const projectSlider = document.querySelector(".project-slider");
+
+  if (projectSlider) {
+    const slides = projectSlider.querySelectorAll(".project-slide");
+    const previousButton =
+      projectSlider.querySelector(".project-slider-prev");
+    const nextButton =
+      projectSlider.querySelector(".project-slider-next");
+
+    let currentSlide = 0;
+
+    function showProjectSlide(newIndex) {
+      if (!slides.length) {
+        return;
+      }
+
+      slides[currentSlide].classList.remove("is-active");
+
+      if (newIndex < 0) {
+        currentSlide = slides.length - 1;
+      } else if (newIndex >= slides.length) {
+        currentSlide = 0;
+      } else {
+        currentSlide = newIndex;
+      }
+
+      slides[currentSlide].classList.add("is-active");
+    }
 
     if (slides.length && previousButton && nextButton) {
-      let currentSlide = 0;
-
-      if (totalCounter) {
-        totalCounter.textContent = slides.length;
-      }
-
-      function showSlide(newIndex) {
-        slides[currentSlide].classList.remove("is-active");
-
-        if (newIndex < 0) {
-          currentSlide = slides.length - 1;
-        } else if (newIndex >= slides.length) {
-          currentSlide = 0;
-        } else {
-          currentSlide = newIndex;
-        }
-
-        slides[currentSlide].classList.add("is-active");
-
-        if (currentCounter) {
-          currentCounter.textContent = currentSlide + 1;
-        }
-      }
-
       previousButton.addEventListener("click", (event) => {
         event.preventDefault();
-        showSlide(currentSlide - 1);
+
+        showProjectSlide(currentSlide - 1);
+
         event.currentTarget.blur();
       });
 
       nextButton.addEventListener("click", (event) => {
         event.preventDefault();
-        showSlide(currentSlide + 1);
+
+        showProjectSlide(currentSlide + 1);
+
         event.currentTarget.blur();
       });
 
       document.addEventListener("keydown", (event) => {
         if (event.key === "ArrowLeft") {
-          showSlide(currentSlide - 1);
+          showProjectSlide(currentSlide - 1);
         }
 
         if (event.key === "ArrowRight") {
-          showSlide(currentSlide + 1);
+          showProjectSlide(currentSlide + 1);
         }
       });
-      document.addEventListener("DOMContentLoaded", () => {
+    }
+  }
+
+
+  // =========================================================
+  // CARRUSEL AUTOMÁTICO DE LA PORTADA
+  // =========================================================
+
   const homeSlider = document.querySelector(".home-slider");
 
-  if (!homeSlider) {
-    return;
+  if (homeSlider) {
+    const homeSlides = homeSlider.querySelectorAll(".home-slide");
+
+    if (homeSlides.length > 1) {
+      let currentHomeSlide = 0;
+
+      function showNextHomeSlide() {
+        homeSlides[currentHomeSlide].classList.remove("is-active");
+
+        currentHomeSlide =
+          (currentHomeSlide + 1) % homeSlides.length;
+
+        homeSlides[currentHomeSlide].classList.add("is-active");
+      }
+
+      setInterval(showNextHomeSlide, 4500);
+    }
   }
 
-  const slides = homeSlider.querySelectorAll(".home-slide");
-
-  if (slides.length < 2) {
-    return;
-  }
-
-  let currentSlide = 0;
-
-  function showNextSlide() {
-    slides[currentSlide].classList.remove("is-active");
-
-    currentSlide = (currentSlide + 1) % slides.length;
-
-    slides[currentSlide].classList.add("is-active");
-  }
-
-  setInterval(showNextSlide, 4500);
+});
 });
     }
   }
