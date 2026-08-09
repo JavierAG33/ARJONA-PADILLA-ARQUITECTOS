@@ -1993,3 +1993,35 @@ main {
     width: calc(100vw - 40px);
     height: 65vh;
   }
+  .works-main {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 50px;
+  }
+
+  .works-header {
+    padding: 36px 0 28px;
+  }
+
+  .works-header h1 {
+    font-size: 34px;
+  }
+
+  .works-filters {
+    justify-content: flex-start;
+    gap: 12px 24px;
+  }
+
+  .works-filter {
+    font-size: 13px;
+  }
+
+  .works-grid {
+    padding-top: 30px;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .works-card h2 {
+    font-size: 14px;
+  }
