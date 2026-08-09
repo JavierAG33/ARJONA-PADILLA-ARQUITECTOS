@@ -1597,7 +1597,8 @@ main {
 /* MAPA */
 
 .contact-location {
-  width: 100%;
+  width: 82%;
+  margin-left: auto;
 }
 
 .contact-location a {
