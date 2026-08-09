@@ -40,7 +40,51 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+  // =========================================================
+// FILTROS DE OBRA CONSTRUIDA
+// =========================================================
 
+const worksFilters = document.querySelectorAll(".works-filter");
+const worksCards = document.querySelectorAll(".works-card");
+
+if (worksFilters.length && worksCards.length) {
+
+  worksFilters.forEach((button) => {
+
+    button.addEventListener("click", () => {
+
+      const selectedCategory = button.dataset.filter;
+
+
+      // Estado de los botones
+
+      worksFilters.forEach((filterButton) => {
+
+        filterButton.classList.toggle(
+          "is-active",
+          filterButton === button
+        );
+      });
+
+
+      // Filtrado de proyectos
+
+      worksCards.forEach((card) => {
+
+        const category = card.dataset.category;
+
+        const shouldShow =
+          selectedCategory === "todos" ||
+          category === selectedCategory;
+
+        card.classList.toggle(
+          "is-hidden",
+          !shouldShow
+        );
+      });
+    });
+  });
+}
 
   // =========================================================
   // CARRUSEL MANUAL DE LAS FICHAS DE PROYECTO
