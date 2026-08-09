@@ -1289,20 +1289,16 @@ main {
   object-fit: contain;
   object-position: center;
 }
-.home-intro {
+.home-detail-page .project-minimal-header {
+  padding: 34px 0 22px;
   display: flex;
   justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 30px;
 }
 
-.home-intro h1 {
-  margin: 0;
-  font-size: clamp(32px, 3vw, 54px);
-  font-weight: 400;
+.home-detail-page .project-minimal-title {
+  max-width: none;
   text-align: center;
 }
-
 
 
 
