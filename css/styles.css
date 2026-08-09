@@ -1984,8 +1984,7 @@ main {
 .project-slider-next {
   cursor: e-resize;
 }
-}
-  .home-slider {
+   .home-slider {
     min-height: calc(100vh - 120px);
   }
 
@@ -2025,3 +2024,4 @@ main {
   .works-card h2 {
     font-size: 14px;
   }
+}
