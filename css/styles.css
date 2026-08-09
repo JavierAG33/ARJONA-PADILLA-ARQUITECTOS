@@ -1669,6 +1669,11 @@ main {
   color: var(--color-text);
   font-weight: 500;
 }
+.works-card-image img.image-contain {
+  object-fit: contain;
+}
+
+
 
 
 @media (max-width: 800px) {
