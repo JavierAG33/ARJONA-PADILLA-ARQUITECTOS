@@ -2211,13 +2211,14 @@ main {
   font-size: 12px;
 }
    .home-slider {
-    min-height: calc(100vh - 120px);
-  }
+  min-height: 0;
+}
 
-  .home-slider-stage {
-    width: calc(100vw - 40px);
-    height: 65vh;
-  }
+.home-slider-stage {
+  width: calc(100vw - 40px);
+  height: auto;
+  aspect-ratio: 4 / 3;
+}
   .works-main {
     margin-left: 20px;
     margin-right: 20px;
