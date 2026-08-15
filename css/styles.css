@@ -2140,8 +2140,8 @@ main {
 .project-detail-page .project-minimal-header h1 {
   margin: 0 0 8px;
 
-  font-size: clamp(28px, 9vw, 42px);
-  line-height: 0.98;
+  font-size: clamp(22px, 7vw, 32px);
+  line-height: 1;
   font-weight: 400;
 }
 
@@ -2159,7 +2159,7 @@ main {
   min-height: 0;
 
   margin: 0;
-  padding: 0 20px 35px;
+  padding: 0 4px 35px;
 }
 
 .project-detail-page .project-slider-stage {
