@@ -2138,38 +2138,7 @@ main {
   padding-right: 0;
   }
 
-  .home-detail-page .home-slider {
-  width: 100%;
-  max-width: none;
-  min-height: 0;
-
-  margin: 0;
-  padding: 0 6px 35px;
-
-  box-sizing: border-box;
-  }
-
-  .home-detail-page .home-slider-stage {
-  width: 100%;
-  max-width: none;
-
-  height: auto;
-  aspect-ratio: 4 / 3;
-
-  margin: 0 auto;
-  }
-
-  .home-detail-page .home-slide {
-  width: 100%;
-  height: 100%;
-  }
-
-  .home-detail-page .home-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  }
-  
+    
 /* =========================================================
    FICHA DE PROYECTO - MÓVIL
    ========================================================= */
@@ -2298,27 +2267,6 @@ main {
   font-size: 12px;
 }
 
-.home-slider {
-  width: 100%;
-  max-width: none;
-  min-height: 0;
-
-  margin: 0;
-  padding: 0 6px 35px;
-
-  box-sizing: border-box;
-}
-
-.home-slider-stage {
-  width: 100%;
-  max-width: none;
-  height: auto;
-
-  aspect-ratio: 4 / 3;
-
-  margin: 0 auto;
-}
-  
   .works-main {
     margin-left: 20px;
     margin-right: 20px;
