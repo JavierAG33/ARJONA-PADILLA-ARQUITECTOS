@@ -2157,7 +2157,9 @@ main {
 }
 
 
-/* SLIDER */
+/* =========================================================
+   SLIDER DE PROYECTO - MÓVIL
+   ========================================================= */
 
 .project-detail-page .project-slider {
   width: 100%;
@@ -2165,61 +2167,84 @@ main {
   min-height: 0;
 
   margin: 0;
-  padding: 0 12px 35px;
+  padding: 0 8px 35px;
 
   box-sizing: border-box;
 }
 
+
+/* CARRUSEL DESLIZABLE */
+
 .project-detail-page .project-slider-stage {
   width: 100%;
   max-width: none;
-
   height: auto;
   aspect-ratio: 4 / 3;
 
-  margin: 0 auto;
+  margin: 0;
+
+  display: flex;
+  gap: 8px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: none;
 }
 
-.project-detail-page .project-slide {
+.project-detail-page .project-slider-stage::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* CADA FOTO */
+
+.project-detail-page .project-slide,
+.project-detail-page .project-slide.is-active {
+  position: relative;
+  inset: auto;
+
+  flex: 0 0 100%;
+
   width: 100%;
   height: 100%;
+
+  margin: 0;
+
+  opacity: 1;
+  visibility: visible;
+
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 
 .project-detail-page .project-slide img {
   width: 100%;
   height: 100%;
 
+  display: block;
+
   object-fit: contain;
 }
-  
-/* BOTONES */
+
+
+/* EN MÓVIL NO MOSTRAMOS LOS CÍRCULOS */
 
 .project-detail-page .project-slider-button {
-  width: 20px;
-  height: 20px;
-
-  padding: 0;
-
-  opacity: 1;
-
-  font-size: 14px;
-  color: var(--color-text);
+  display: none;
 }
 
-.project-detail-page .project-slider-prev {
-  cursor: pointer;
-}
 
-.project-detail-page .project-slider-next {
-  cursor: pointer;
-}
+/* NOMBRE DEL PROYECTO */
 
 .project-detail-page .project-slider-footer {
   margin-top: 10px;
   font-size: 12px;
-}
-   .home-slider {
-  min-height: 0;
 }
 
 .home-slider-stage {
