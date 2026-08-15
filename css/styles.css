@@ -2159,12 +2159,12 @@ main {
   width: 100%;
   min-height: 0;
   margin: 0;
-  padding: 0 12px 35px;
+  padding: 0 8px 35px;
 }
 
 .project-detail-page .project-slider-stage {
   width: 100%;
-  max-width: 560px;
+  max-width: none;
   height: auto;
   aspect-ratio: 4 / 3;
   margin: 0 auto;
