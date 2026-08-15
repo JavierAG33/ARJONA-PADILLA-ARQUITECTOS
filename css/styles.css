@@ -2368,25 +2368,25 @@ main {
   }
 
   .home-detail-page .home-slider {
-  display: block;
-
   width: 100%;
   max-width: none;
-
   margin: 0;
-  padding: 0 6px 35px;
+  padding: 0 0 35px;
 
+  display: block;
   box-sizing: border-box;
   }
 
   .home-detail-page .home-slider-stage {
   position: relative;
 
-  width: 100%;
+  width: calc(100vw - 12px);
   max-width: none;
-
   height: auto;
   aspect-ratio: 4 / 3;
+
+  left: 50%;
+  transform: translateX(-50%);
 
   margin: 0;
   }
@@ -2397,7 +2397,6 @@ main {
 
   width: 100%;
   height: 100%;
-
   margin: 0;
   }
 
