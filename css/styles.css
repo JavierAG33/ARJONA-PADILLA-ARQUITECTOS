@@ -1698,7 +1698,10 @@ main {
     align-items: flex-end;
     gap: 8px;
   }
-
+  
+  .main-navigation a {
+  white-space: nowrap;
+  }
   .intro {
     min-height: 64vh;
     padding-top: 60px;
@@ -2124,13 +2127,14 @@ main {
   .home-directory-arrow {
     font-size: 22px;
   }
-    /* =========================================================
+  
+/* =========================================================
    FICHA DE PROYECTO - MÓVIL
    ========================================================= */
 
 .project-detail-page .project-minimal-header {
+  width: 100%;
   padding: 32px 20px 24px;
-
   display: block;
 }
 
@@ -2141,7 +2145,6 @@ main {
 
 .project-detail-page .project-minimal-header h1 {
   margin: 0 0 8px;
-
   font-size: clamp(22px, 7vw, 32px);
   line-height: 1;
   font-weight: 400;
@@ -2149,7 +2152,6 @@ main {
 
 .project-detail-page .project-minimal-title p {
   margin: 0;
-
   font-size: 13px;
   line-height: 1.4;
 }
@@ -2159,16 +2161,22 @@ main {
 
 .project-detail-page .project-slider {
   width: 100%;
+  max-width: none;
   min-height: 0;
+
   margin: 0;
-  padding: 0 2px 35px;
+  padding: 0 12px 35px;
+
+  box-sizing: border-box;
 }
 
 .project-detail-page .project-slider-stage {
   width: 100%;
   max-width: none;
+
   height: auto;
   aspect-ratio: 4 / 3;
+
   margin: 0 auto;
 }
 
@@ -2180,10 +2188,10 @@ main {
 .project-detail-page .project-slide img {
   width: 100%;
   height: 100%;
+
   object-fit: contain;
 }
-
-
+  
 /* BOTONES */
 
 .project-detail-page .project-slider-button {
